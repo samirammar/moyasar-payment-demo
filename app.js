@@ -21,7 +21,7 @@ app.get('/callback', async function (req, res) {
   })
   
 
-app.listen(4000, ()=>{
+app.listen(process.env.port || 4000, ()=>{
     console.log('http://localhost:4000');
 })
 
